@@ -1,3 +1,5 @@
+package Task4;
+
 public class CustomFunctionsUsingStackInLinkedList {
 	private static class Node{
 		int data;

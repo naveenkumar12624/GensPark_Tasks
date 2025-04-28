@@ -1,3 +1,5 @@
+package Task4;
+
 public class QueueUsingLL {
 	public static void main(String[] args) {
 		CustomFunctionsUsingQueueInLinkedList queue = new CustomFunctionsUsingQueueInLinkedList();
@@ -9,7 +11,7 @@ public class QueueUsingLL {
 
 		queue.displayQueue();
 
-		queue.dequeue();
+		System.out.println(queue.dequeue());
 		System.out.println("Peak :"+ queue.QueuePeek());
 
 

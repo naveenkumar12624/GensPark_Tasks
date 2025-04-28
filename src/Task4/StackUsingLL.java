@@ -1,3 +1,4 @@
+package Task4;
 
 public class StackUsingLL {
 	public static void main(String[] args) {
@@ -7,7 +8,7 @@ public class StackUsingLL {
 		customFunctionsUsingStackInLinkedList.push(10);
 		customFunctionsUsingStackInLinkedList.push(20);
 
-		customFunctionsUsingStackInLinkedList.pop();
+		System.out.println(customFunctionsUsingStackInLinkedList.pop());
 		customFunctionsUsingStackInLinkedList.displayStack();
 
 		customFunctionsUsingStackInLinkedList.pop();
