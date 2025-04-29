@@ -1,0 +1,116 @@
+@startuml
+
+'============================'
+'        Interfaces          '
+'============================'
+interface CanEat {
+    + eat()
+}
+
+interface CanFly {
+    + fly()
+}
+
+interface CanSpeak {
+    + speak()
+}
+
+interface FlightMode {
+    + performFlight()
+}
+
+'============================'
+'         Base Class         '
+'============================'
+class Creature {
+    - speciesName : String
+    - skinColor : String
+    - mass : int
+    + getSpeciesName() : String
+    + setSpeciesName(String)
+    + getSkinColor() : String
+    + setSkinColor(String)
+    + getMass() : int
+    + setMass(int)
+}
+
+'============================'
+'     Concrete Classes       '
+'============================'
+class Parrot {
+    + eat()
+    + fly()
+    + speak()
+}
+
+class Hawk {
+    + eat()
+    + fly()
+    + speak()
+}
+
+class Dove {
+    - flightMode : FlightMode
+    + setFlightMode(FlightMode)
+    + getFlightMode() : FlightMode
+    + fly()
+}
+
+class Penguin {
+    + eat()
+}
+
+class Whale {
+    + eat()
+    + speak()
+}
+
+'============================'
+' Strategy Pattern Classes   '
+'============================'
+class FastGlide {
+    + performFlight()
+}
+
+class FlapAndGlide {
+    + performFlight()
+}
+
+'============================'
+'     Utility Class          '
+'============================'
+class Aviary {
+    + performDailyRoutine(Creature)
+}
+
+'============================'
+'         Relationships      '
+'============================'
+
+' Inheritance
+Parrot --|> Creature
+Hawk --|> Creature
+Dove --|> Creature
+Penguin --|> Creature
+Whale --|> Creature
+
+' Interface Implementation
+Parrot ..|> CanEat
+Parrot ..|> CanFly
+Parrot ..|> CanSpeak
+
+Hawk ..|> CanEat
+Hawk ..|> CanFly
+Hawk ..|> CanSpeak
+
+Dove ..|> CanFly
+Dove --> FlightMode
+
+Penguin ..|> CanEat
+Whale ..|> CanEat
+Whale ..|> CanSpeak
+
+FastGlide ..|> FlightMode
+FlapAndGlide ..|> FlightMode
+
+@enduml
