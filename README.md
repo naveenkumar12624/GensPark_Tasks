@@ -1,3 +1,6 @@
+# Task1:
+<img src="https://github.com/naveenkumar12624/GensPark_Tasks/blob/master/src/BirdsOOPS/Diagram.png">
+
 # Task 2
 ## Approach:
 This implementation builds a singly linked list with basic operations including insertion,
