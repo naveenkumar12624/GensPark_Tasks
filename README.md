@@ -1,6 +1,7 @@
 # Task1:
 <img src="https://github.com/naveenkumar12624/GensPark_Tasks/blob/master/src/BirdsOOPS/Diagram.png">
 
+-------------------------------------------------------------------------
 # Task 2
 ## Approach:
 This implementation builds a singly linked list with basic operations including insertion,
@@ -25,6 +26,40 @@ non-contiguous manner, which makes insertion and deletion efficient at the ends 
 at specific positions.
 
 -------------------------------------------------------------------------
+# Task 3
+
+ ## 1. Print Descending from Array
+* Goal: Print array elements in reverse order.
+
+* Approach: Start from the last index and recursively move backward until index < 0.
+
+## 2. Print Ascending from Array
+* Goal: Print array elements in forward order.
+
+* Approach: Use recursion to reach the end of the array, then print elements while returning (post-order traversal).
+
+ ## 3. Print Ascending + Descending Order
+* Goal: Print numbers in both orders around recursion.
+
+* Approach: Print n before and after the recursive call, building symmetric output.
+
+## 4. Print Reverse Star Pattern
+* Goal: Print decreasing rows of *.
+
+* Approach: Print n stars, then recurse with n - 1.
+
+## 5. Print Forward Star Pattern
+* Goal: Print increasing rows of *.
+
+* Approach: Recursively reach n == 1, then print increasing stars while returning.
+
+## 6. Print Number Triangle
+* Goal: Print rows from 1 to n, each showing 1 to i.
+
+* Approach: Recurse until n == 0, then for each n, print numbers from 1 to n.
+
+  -------------------------------------------------------------------------
+
 # Task 4
 ## Approach:
 ## Stack Using Linked List–LIFO (Last In, First Out) 
