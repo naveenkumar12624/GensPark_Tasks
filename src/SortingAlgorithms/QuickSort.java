@@ -1,5 +1,5 @@
 package SortingAlgorithms;
-import java.util.*;
+
 public class QuickSort {
     public static void main(String[] args) {
         int[] arr = {10, 7, 8, 9, 1, 5};
@@ -31,7 +31,7 @@ public class QuickSort {
         int i = low - 1; // Pointer for smaller elements
 
         for (int j = low; j < high; j++) {
-            if (arr[j] < pivot) { // If element is smaller than pivot
+            if (arr[j] < pivot) { // If an element is smaller than pivot
                 i++;
                 swap(arr, i, j);
             }
